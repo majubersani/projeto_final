@@ -1,0 +1,29 @@
+.icon {
+    font-size: 30px;
+    color: white;
+    margin: 5px;
+}
+
+.navegar {
+    background-color: #F2B544;
+}
+
+.titulo2 {
+    font-family: Chalkduster, fantasy;
+    font-size: 60px;
+    text-align: center;
+    color: darkred;
+}
+
+.texto {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card {
+    background-color: #9AA97F;
+    height: 75vh;
+    width: 45%;
+
+}
