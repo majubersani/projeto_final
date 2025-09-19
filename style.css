@@ -22,7 +22,7 @@
 }
 
 .card {
-    background-color: #9AA97F;
+    background-color: #a9a77f;
     height: 75vh;
     width: 45%;
 }
@@ -31,3 +31,25 @@
 .footer_cor {
     background-color: #9AA97F;
 }
+
+.imagem {
+    font-size:2px;
+    color: white;
+    margin: 20px;
+}
+#div-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#div-container form{
+    margin-top: 100px;
+    background-color: #9AA97F;
+    height: 60vh;
+    width: 30%;
+}
+
+.btn{
+    background-color: black;
+}
+
