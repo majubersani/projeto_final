@@ -9,23 +9,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
 
 <!-- Modelo de Navbar --> <!-- d-flex = display flex = posição  flex-row = linha-->
 <nav class="navegar navbar d-flex flex-row">
-    <i class="icon bi bi-list"></i>
-    <ul class="navbar-nav d-flex flex-row">
-        <!--nav-item: item da lista da barra de navegação  nav-link active: transforma os itens em links-->
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Página Inicial.html">Página Inicial</a></li>
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Login.html">Login</a></li>
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Cadastros.html">Cadastros</a></li>
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Loja.html">Loja</a></li>
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Medicinais.html">Medicinais</a></li>
-        <li class="nav-item m-2"><a class="nav-link titulo text-white" href="Blog.html">Blog</a></li>
-    </ul>
-    <i class="icon bi bi-cart"></i>
+    <div class="d-flex flex-row">
+        <i class="icon bi bi-list"></i>
+        <ul class="navbar-nav d-flex flex-row">
+            <!--nav-item: item da lista da barra de navegação  nav-link active: transforma os itens em links-->
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
+        </ul>
+    </div>
     <div>
+        <i class="icon bi bi-cart"></i>
         <a class="navbar-brand ps-3"><img src="logo.svg"
                                           width="70px"></a>
         <div class="d-flex flex-row">
@@ -34,61 +35,46 @@
     </div>
 </nav>
 
-<div class="container mt-4 p-5 w-50">
-
-    <form>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputEmail4">CPF</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputPassword4">Senha </label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Digite aqui">
-            </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                    Concordo com as leis
-                </label>
-            </div>
+<form>
+    <div class="form-row">
+        <div class="col-md-3 mb-3 m-3 fonte">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" class="form-control is-valid" placeholder="Nome" value=""
+                   required>
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-        <div onmousedown="limpaInput()" class="btn btn-primary" >Limpar</div>
-
-    </form>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+    <div class="form-row">
+        <div class="col-md-3 mb-3 m-3 fonte">
+            <label for="cpf">CPF</label>
+            <input id="cpf" type="text" class="form-control is-invalid" placeholder="CPF" required>
+        </div>
+        <div class="col-md-3 mb-3 m-3 fonte">
+            <label for="senha">Senha</label>
+            <input id="senha" type="text" class="form-control is-invalid" placeholder="Senha" required>
+        </div>
+        <div class="col-md-3 mb-3 m-3 fonte">
+            <label for="confirmar_senha">Confirmar senha</label>
+            <input id="confirmar_senha" type="text" class="form-control is-invalid" placeholder="Confirmar senha" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check m-3 fonte">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+            <label class="form-check-label" for="invalidCheck3">
+                Concordo com os termos e condições
+            </label>
+        </div>
+    </div>
+    <button class="btn btn-primary m-3 botao fonte" type="submit">Entrar</button>
+    <div class="btn btn-primary botao-contato text-light" onmousedown="limpaInput()">Limpar</div>
+</form>
 
 
 
-
-
-
-
+     <div class="justify-content-end">
+        <img src="imgpaglogin.svg"
+             width="100%">
+    </div>
 
 
 
@@ -96,12 +82,32 @@
 
 
 
-<!-- Rodapé -->
-<footer class="footer text-center footer_cor">
-    <a class="text-light" href="https://www.whatsapp.com/?lang=pt_BR"><i class="meu-icone bi bi-whatsapp"></i></a>
-    <a class="text-light" href="https://www.instagram.com/"><i class="meu-icone bi bi-instagram"></i></a>
-    <a class="text-light" href="https://www.facebook.com/?locale=pt_BR"><i class="meu-icone bi bi-facebook"></i></a>
-    <p class="text-light">&copy; 2025 - Raízes do Brasil. Todos os direitos reservados.</p>
-</footer>
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
