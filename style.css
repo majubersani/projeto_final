@@ -37,35 +37,6 @@
 
 
 
-
-.imagem {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: unset;
-    overflow: clip;
-    max-height: calc(100vh - 100px);
-}
-
-.imagem img {
-    padding-top: 80px;
-}
-
-#div-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#div-container form{
-    margin-top: 100px;
-    background-color: #9AA97F;
-    height: 60vh;
-    width: 30%;
-}
-
-.btn{
-    background-color: black;
-}
-
 .card_cadastro {
     background-color: #9AA97F;
     width: 50%;
