@@ -65,3 +65,12 @@
 .btn{
     background-color: black;
 }
+
+.card_cadastro {
+    background-color: #9AA97F;
+    width: 50%;
+}
+
+.form {
+    color: white;
+}
