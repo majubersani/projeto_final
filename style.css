@@ -33,10 +33,17 @@
 }
 
 .imagem {
-    font-size:2px;
-    color: white;
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: unset;
+    overflow: clip;
+    max-height: calc(100vh - 100px);
 }
+
+.imagem img {
+    padding-top: 80px;
+}
+
 #div-container{
     display: flex;
     flex-direction: row;
@@ -52,4 +59,3 @@
 .btn{
     background-color: black;
 }
-
