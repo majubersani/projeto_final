@@ -16,6 +16,12 @@ aside .nav-link:hover {
   color: #ffc107; /
 }
 
+.aside-tribal {
+  background-color: #a94442;
+  color: #fff;
+  min-height: 100vh;
+}
+
 /* Ajuste para imagens dos cards ficarem do mesmo tamanho */
 .card-img-top {
   height: 200px;
@@ -73,7 +79,6 @@ aside .nav-link:hover {
   border: none;
 }
 
-/* botão azul exclusivo para cocares */
 .btn-primary {
   background-color: #007bff;
   border: none;
@@ -86,15 +91,8 @@ aside .nav-link {
   color: #fff;
 }
 
-/* Hover nos links */
-aside .nav-link:hover {
-  color: #ffc107; /* amarelo */
-}
-
 /* Categoria ativa (quando está na página dela) */
 aside .nav-link.active {
   color: #0d6efd !important;       /* azul */
   font-weight: bold;
 }
-
-

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="medicinais.css">
+</head>
+<body>
+
+<!-- Modelo de Navbar --> <!-- d-flex = display flex = posição flex-row = linha-->
+<nav class="navegar navbar d-flex flex-row">
+    <div class="d-flex flex-row">
+        <i class="icon bi bi-list"></i>
+        <ul class="navbar-nav d-flex flex-row">
+            <!--nav-item: item da lista da barra de navegação  nav-link active: transforma os itens em links-->
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
+            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <div>
+        <i class="icon bi bi-cart"></i>
+        <a class="navbar-brand ps-3"><img src="logo.svg"
+                                          width="70px" alt=""></a>
+        <div class="d-flex flex-row">
+
+        </div>
+    </div>
+</nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="container-fluid">
+    <div class="row">
+
+    <!-- Sidebar -->
+         <aside class="col-md-2 aside-tribal p-3">
+          <a class="nav-link text-white" href="medicinais.html"><h5 class="fw-bold text-white">Categorias</h5></a>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="filtrar_med_ervas.html">Ervas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="filtrar_med_plantas.html">Plantas</a> <!-- ativo nesta página -->
+            </li>
+          </ul>
+
+        </aside>
+
+      <!-- Produtos -->
+             <main class="col-md-10 p-4">
+             <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12">
+          <div class="card-medicinal shadow-sm d-flex align-items-center">
+            <div class="img-container">
+              <img src="https://thumbor.cartpanda.com/CWHQ8qhuoeRAPZpZIltP38u4nvY=/2048x2048/https://assets.mycartpanda.com/static/products_images/2d/71/e7/1696904884718.jpeg?v=13252247658"
+                   alt="Aroeira">
+            </div>
+            <div class="conteudo-card">
+              <h5 class="titulo-medicinal">Aroeira (Schinus terebinthifolius)</h5>
+              <p><strong>Uso:</strong> 	Anti-inflamatório, cicatrizante e adstringente.;</p>
+              <p><strong>Parte utilizada:</strong> Casca;</p>
+              <p><strong>Forma de uso:</strong> Infusão da casca para lavagens e banhos tópicos.</p>
+                <a href="filtrar_med_plantas.html" class="btn btn-success btn-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12">
+          <div class="card-medicinal shadow-sm d-flex align-items-center">
+            <div class="img-container">
+              <img src="https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F10987748.webp&w=3840&q=40"
+                   alt="Cajueiro(Anacardium occidentale)">
+            </div>
+            <div class="conteudo-card">
+              <h5 class="titulo-medicinal">Cajueiro (Anacardium occidentale)</h5>
+              <p><strong>Uso:</strong> Usos variados, como contra inflamações e como adstringente;</p>
+              <p><strong>Parte utilizada:</strong> Cascas, folhas, fruto;</p>
+              <p><strong>Forma de uso:</strong> Preparos diversos, como infusões e sucos, dependendo da parte utilizada e do tratamento.</p>
+                <a href="filtrar_med_plantas.html" class="btn btn-success btn-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12">
+          <div class="card-medicinal shadow-sm d-flex align-items-center">
+            <div class="img-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsQjMVzY_TTP6fU2HVprBwTW4oBirQJFDf-gC5a8Gct0fqWCNOhrzqmRGKbseG2MkNeU&usqp=CAU"
+                   alt="Carapanaúba(Licania spp.)">
+            </div>
+            <div class="conteudo-card">
+              <h5 class="titulo-medicinal"> Carapanaúba(Licania spp.)</h5>
+              <p><strong>Uso:</strong> 	Tratamento de sintomas virais, como os da COVID-19, em algumas comunidades indígenas;</p>
+              <p><strong>Parte utilizada:</strong> Casca;</p>
+              <p><strong>Forma de uso:</strong> Infusão da casca, combinada com outros ingredientes, como jambu, alho e limão.</p>
+                <a href="filtrar_med_plantas.html" class="btn btn-success btn-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12">
+          <div class="card-medicinal shadow-sm d-flex align-items-center">
+            <div class="img-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAzxYsJxTr5fFiqZbng_kXtiPogdD7OvWoOA&s"
+                   alt="Copaíba (Copaifera spp.)">
+            </div>
+            <div class="conteudo-card">
+              <h5 class="titulo-medicinal"> Copaíba (Copaifera spp.)</h5>
+              <p><strong>Uso:</strong> Anti-inflamatório, cicatrizante e antimicrobiano. Utilizado em feridas, infecções e problemas de pele;</p>
+              <p><strong>Parte utilizada:</strong> Óleo da casca;</p>
+              <p><strong>Forma de uso:</strong> Uso tópico, aplicando o óleo diretamente na área afetada, ou em preparos específicos.</p>
+                <a href="filtrar_med_plantas.html" class="btn btn-success btn-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12">
+          <div class="card-medicinal shadow-sm d-flex align-items-center">
+            <div class="img-container">
+              <img src="https://acdn-us.mitiendanube.com/stores/003/981/942/products/espinheira-santa-50g-90fbae77a1ddee97ec17071693292597-1024-1024.webp"
+                   alt="Espinheira-santa(Maytenus ilicifolia)">
+            </div>
+            <div class="conteudo-card">
+              <h5 class="titulo-medicinal"> Espinheira-santa(Maytenus ilicifolia)</h5>
+              <p><strong>Uso:</strong> Tratamento de problemas estomacais, como gastrite e úlceras;</p>
+              <p><strong>Parte utilizada:</strong> Folhas;</p>
+              <p><strong>Forma de uso:</strong> Chá preparado com as folhas secas.</p>
+                <a href="filtrar_med_plantas.html" class="btn btn-success btn-sm">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+  <!-- Rodapé -->
+    <footer class="footer text-center footer_cor">
+      <a class="text-light" href="https://www.whatsapp.com/?lang=pt_BR"><i class="meu-icone bi bi-whatsapp"></i></a>
+      <a class="text-light" href="https://www.instagram.com/"><i class="meu-icone bi bi-instagram"></i></a>
+      <a class="text-light" href="https://www.facebook.com/?locale=pt_BR"><i class="meu-icone bi bi-facebook"></i></a>
+      <p class="text-light">&copy; 2025 - Raízes do Brasil. Todos os direitos reservados.</p>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
