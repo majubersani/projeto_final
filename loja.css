@@ -1,0 +1,100 @@
+/* Sidebar */
+aside {
+  min-height: 100vh; /* ocupa toda a altura */
+}
+
+aside h5 {
+  margin-bottom: 20px;
+}
+
+aside .nav-link {
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+aside .nav-link:hover {
+  color: #ffc107; /
+}
+
+/* Ajuste para imagens dos cards ficarem do mesmo tamanho */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.navegar {
+    background-color: #F2B544;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  background-color: #9eb3943d;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Botão comprar */
+.btn-success {
+  background-color: #3c763d;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2d572e;
+}
+
+/* Rodapé */
+.footer_cor {
+  background-color: #9AA97F;
+  padding: 20px 0;
+}
+
+.meu-icone {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.meu-icone:hover {
+  color: #ffc107;
+}
+
+/* botão padrão (verde) */
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+/* botão azul exclusivo para cocares */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+/* Links padrão da sidebar */
+aside .nav-link {
+  padding: 8px 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Hover nos links */
+aside .nav-link:hover {
+  color: #ffc107; /* amarelo */
+}
+
+/* Categoria ativa (quando está na página dela) */
+aside .nav-link.active {
+  color: #0d6efd !important;       /* azul */
+  font-weight: bold;
+}
+
+
