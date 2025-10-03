@@ -1,0 +1,169 @@
+/* ==================== GLOBAL ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eae4d4; /* Fundo bege claro */
+}
+
+/* ==================== NAVBAR ==================== */
+.navegar {
+  background-color: #F2B544; /* amarelo */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5b731;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .titulo {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .titulo:hover {
+  color: #333;
+}
+
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ==================== PAGE CONTAINER ==================== */
+.page-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ==================== CARD ==================== */
+.content-card {
+  display: flex;
+  flex-direction: row; /* lado a lado em desktop */
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  gap: 30px;
+  max-width: 1000px; /* aumentei um pouco para dar mais espaço */
+  margin: 0 auto;
+  flex-wrap: wrap; /* para telas pequenas, vira coluna */
+  align-items: flex-start;
+}
+
+/* ==================== VÍDEO ==================== */
+.video-wrapper {
+  flex: 1 1 500px; /* ocupa bem o espaço */
+  min-width: 350px;
+  max-width: 550px; /* limita para não ficar gigante */
+}
+
+.video-player {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* mantém proporção correta */
+  border-radius: 12px;
+  border: none;
+}
+
+/* ==================== FORMULÁRIO ==================== */
+.comment-wrapper {
+  flex: 1 1 400px; /* ocupa espaço proporcional */
+  min-width: 320px;
+  max-width: 450px;
+  background-color: #a7b88c;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.comment-wrapper h2 {
+  color: #8b1e1e;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.comment-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-wrapper form input,
+.comment-wrapper form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
+
+.comment-wrapper form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.comment-wrapper form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comment-wrapper form button:hover {
+  background-color: #333;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+  .content-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video-wrapper,
+  .comment-wrapper {
+    max-width: 100%;
+  }
+
+  .video-player {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ==================== RODAPÉ ==================== */
+.footer_cor {
+  background-color: #9AA97F;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.meu-icone {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.meu-icone:hover {
+  color: #ffc107;
+}

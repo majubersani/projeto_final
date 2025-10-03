@@ -1,0 +1,194 @@
+/* Sidebar (não usada aqui mas já fica pronta) */
+aside {
+  min-height: 100vh;
+}
+
+aside h5 {
+  margin-bottom: 20px;
+}
+
+aside .nav-link {
+  padding: 8px 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+aside .nav-link:hover {
+  color: #ffc107;
+}
+
+.aside-tribal {
+  background-color: #a94442;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navegar {
+  background-color: #F2B544; /* amarelo */
+}
+
+/* Ajuste imagens dos cards */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  background-color: #9eb3943d; /* verde claro transparente */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.favorite {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.favorite input {
+  display: none;
+}
+
+.favorite .bi-heart-fill {
+  display: none;
+  color: red;
+}
+
+.favorite input:checked ~ .bi-heart {
+  display: none;
+}
+
+.favorite input:checked ~ .bi-heart-fill {
+  display: inline;
+}
+
+/* Rodapé */
+.footer_cor {
+  background-color: #9AA97F;
+  padding: 20px 0;
+}
+
+.meu-icone {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.meu-icone:hover {
+  color: #ffc107;
+}
+
+/* Categoria ativa */
+aside .nav-link.active {
+  color: #0d6efd !important;
+  font-weight: bold;
+}
+
+/* ================= COMENTÁRIOS ================= */
+.d-none {
+  display: none !important;
+}
+
+/* Card verde */
+.content-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #9AA97F; /* verde */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Vídeo ocupa metade */
+.video-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Formulário proporcional */
+.comment-wrapper {
+  flex: 1 1 400px; /* ocupa espaço proporcional */
+  min-width: 320px;
+  max-width: 450px;
+  background-color: #a7b88c;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.comment-wrapper h2 {
+  color: #8b1e1e;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.comment-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-wrapper form input,
+.comment-wrapper form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
+
+.comment-wrapper form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.comment-wrapper form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comment-wrapper form button:hover {
+  background-color: #333;
+}
+
+/* Botão voltar */
+.btn-voltar {
+  margin-top: 10px;
+  background: #F2B544;
+  color: #000;
+}

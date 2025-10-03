@@ -1,0 +1,180 @@
+/* Sidebar (não usada aqui mas já fica pronta) */
+aside {
+  min-height: 100vh;
+}
+
+aside h5 {
+  margin-bottom: 20px;
+}
+
+aside .nav-link {
+  padding: 8px 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+aside .nav-link:hover {
+  color: #ffc107;
+}
+
+.aside-tribal {
+  background-color: #a94442;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navegar {
+  background-color: #F2B544; /* amarelo */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eae4d4; /* Fundo bege claro */
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5b731;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons i {
+  color: #005baa;
+  font-size: 22px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-container {
+  background-color: #a7b88c;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  flex: 1 1 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  color: #8b1e1e;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+/* ===== VÍDEO ===== */
+.video-container {
+  flex: 1 1 500px;
+  max-width: 600px;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+.footer_cor {
+  background-color: #9AA97F;
+  padding: 20px 0;
+}
+
+.meu-icone {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.meu-icone:hover {
+  color: #ffc107;
+}
+
+/* Categoria ativa */
+aside .nav-link.active {
+  color: #0d6efd !important;
+  font-weight: bold;
+}
