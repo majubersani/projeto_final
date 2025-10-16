@@ -1,4 +1,4 @@
-/* Sidebar */
+/* SIDEBAR */
 aside {
   min-height: 100vh; /* ocupa toda a altura */
 }
@@ -11,16 +11,18 @@ aside h5 {
 aside .nav-link {
   color: #fff; /* branco */
   font-weight: normal;
-}
-
-/* Quando o link está ativo (na página atual) */
-aside .nav-link.active {
-  color: #0d6efd !important; /* azul padrão Bootstrap */
-  font-weight: bold;
+  padding: 8px 0;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
 aside .nav-link:hover {
-  color: #ffc107; /
+  color: #ffc107;
+}
+
+aside .nav-link.active {
+  color: #0d6efd !important; /* azul padrão Bootstrap */
+  font-weight: bold;
 }
 
 .aside-tribal {
@@ -29,83 +31,36 @@ aside .nav-link:hover {
   min-height: 100vh;
 }
 
-/* Ajuste para imagens dos cards ficarem do mesmo tamanho */
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
+/* NAVBAR */
 .navegar {
-    background-color: #F2B544;
+  background-color: #F2B544;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-/* Cards */
-.card {
-  border-radius: 10px;
-  background-color: #9eb3943d;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+.icon {
+  font-size: 26px;
+  color: white;
+  margin: 0 8px;
+  cursor: pointer;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-/* Botão comprar */
-.btn-success {
-  background-color: #3c763d;
-  border: none;
-}
-
-.btn-success:hover {
-  background-color: #2d572e;
-}
-
-/* Rodapé */
-.footer_cor {
-  background-color: #9AA97F;
-  padding: 20px 0;
-}
-
-.meu-icone {
-  font-size: 1.5rem;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-.meu-icone:hover {
-  color: #ffc107;
-}
-
-/* botão padrão (verde) */
-.btn-success {
-  background-color: #28a745;
-  border: none;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border: none;
-}
-
-/* Links padrão da sidebar */
-aside .nav-link {
-  padding: 8px 0;
+/* Links */
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: white !important;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  opacity: 0.8;
 }
 
-/* Categoria ativa (quando está na página dela) */
-aside .nav-link.active {
-  color: #0d6efd !important;       /* azul */
-  font-weight: bold;
-}
-
-/* Estilo dos cards medicinais */
-/* Cards Medicinais */
+/* ===================== */
+/* CARDS MEDICINAIS */
+/* ===================== */
 .card-medicinal {
   background-color: #a94442; /* vermelho terroso */
   border-radius: 15px;
@@ -114,7 +69,7 @@ aside .nav-link.active {
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  min-height: 220px; /* altura maior */
+  min-height: 220px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s;
 }
 
@@ -123,7 +78,7 @@ aside .nav-link.active {
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-/* Imagem dentro do card (quadrada no canto) */
+/* Imagem dentro do card */
 .img-container {
   flex-shrink: 0;
   width: 180px;
@@ -151,19 +106,36 @@ aside .nav-link.active {
   font-size: 1.3rem;
 }
 
-/* Categoria ativa (quando está na página dela) */
-aside .nav-link.active {
-  color: #0d6efd !important; /* azul */
-  font-weight: bold;
+/* CARDS PADRÃO */
+.card {
+  border-radius: 10px;
+  background-color: #9eb3943d;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
 }
 
-/* Corpo da página */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Botão comprar */
+.btn-success {
+  background-color: #3c763d;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2d572e;
+}
+
+/* BODY / FUNDO */
 body {
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #FFF8DC; /* amarelo claro suave */
 }
 
 /* Main ocupa todo o espaço restante */
@@ -171,9 +143,19 @@ body {
   flex: 1;
 }
 
-/* Footer sempre no final */
+/* RODAPÉ */
 footer.footer_cor {
   background-color: #9AA97F;
   padding: 20px 0;
   text-align: center;
+}
+
+.meu-icone {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.meu-icone:hover {
+  color: #ffc107;
 }

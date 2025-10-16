@@ -31,8 +31,20 @@ aside .nav-link:hover {
   border-top-right-radius: 10px;
 }
 
+/* NAVBAR */
 .navegar {
-    background-color: #F2B544;
+  background-color: #F2B544;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.icon {
+  font-size: 26px;
+  color: white;
+  margin: 0 8px;
+  cursor: pointer;
 }
 
 /* Cards */
@@ -71,6 +83,16 @@ aside .nav-link:hover {
 
 .meu-icone:hover {
   color: #ffc107;
+}
+
+/* BODY / FUNDO */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFF8DC; /* amarelo claro suave */
 }
 
 /* botão padrão (verde) */
