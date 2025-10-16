@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raízes do Brasil</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- NOVAS FONTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
-<!-- Modelo de Navbar --> <!-- d-flex = display flex = posição  flex-row = linha-->
-<nav class="navegar navbar d-flex flex-row">
-    <div class="d-flex flex-row">
-        <i class="icon bi bi-list"></i>
-        <ul class="navbar-nav d-flex flex-row">
-            <!--nav-item: item da lista da barra de navegação  nav-link active: transforma os itens em links-->
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
-        </ul>
-    </div>
-    <div>
-        <i class="icon bi bi-cart"></i>
-        <a class="navbar-brand ps-3"><img src="logo.svg"
-                                          width="70px"></a>
-        <div class="d-flex flex-row">
-
-        </div>
-    </div>
+<!-- Navbar -->
+<nav class="navegar navbar d-flex flex-row justify-content-between px-3">
+  <div class="d-flex flex-row align-items-center">
+    <i class="icon bi bi-list"></i>
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
+    </ul>
+  </div>
+  <div class="d-flex align-items-center">
+    <i class="icon bi bi-cart"></i>
+    <a class="navbar-brand ps-3"><img src="logo.svg" width="70px" alt="Logo"></a>
+  </div>
 </nav>
 
-<!-- Container com card e imagem -->
-<div class="container-inicial d-flex flex-column flex-md-row align-items-center justify-content-center my-5">
-    <div class="card-inicial p-4 m-3">
-        <p class="titulo2">Bem-vindo(a)</p>
-        <p class="texto">Nossa missão é promover a valorização da cultura indígena, integrando tradições e recursos tecnológicos para desenvolvimento sustentável e fortalecimento da identidade dos povos originários.</p>
-    </div>
+<!-- Conteúdo principal -->
+<main class="conteudo-inicial d-flex flex-column flex-md-row align-items-center justify-content-center">
+  <div class="card card-inicial p-4 m-3 text-center shadow-lg">
+    <h1 class="titulo2">Bem-vindo(a)</h1>
+    <p class="texto">
+      Nossa missão é promover a valorização da cultura indígena, integrando tradições e recursos tecnológicos
+      para o desenvolvimento sustentável e fortalecimento da identidade dos povos originários.
+    </p>
+  </div>
 
-    <div class="imagem-inicial m-3">
-        <img src="img_inicial.svg" alt="Cultura indígena" class="img-fluid">
-    </div>
-</div>
+  <div class="imagem-inicial">
+    <img src="img_inicial.svg" alt="Cultura indígena" class="img-fluid">
+  </div>
+</main>
 
 <!-- Rodapé -->
-<footer class="footer text-center footer_cor">
-      <a class="text-light" href="https://www.whatsapp.com/?lang=pt_BR"><i class="meu-icone bi bi-whatsapp"></i></a>
-      <a class="text-light" href="https://www.instagram.com/"><i class="meu-icone bi bi-instagram"></i></a>
-      <a class="text-light" href="https://www.facebook.com/?locale=pt_BR"><i class="meu-icone bi bi-facebook"></i></a>
-      <p class="text-light">&copy; 2025 - Raízes do Brasil. Todos os direitos reservados.</p>
+<footer class="footer text-center footer_cor p-3">
+  <a class="text-light mx-2" href="https://www.whatsapp.com/?lang=pt_BR"><i class="meu-icone bi bi-whatsapp"></i></a>
+  <a class="text-light mx-2" href="https://www.instagram.com/"><i class="meu-icone bi bi-instagram"></i></a>
+  <a class="text-light mx-2" href="https://www.facebook.com/?locale=pt_BR"><i class="meu-icone bi bi-facebook"></i></a>
+  <p class="text-light mt-2 mb-0">&copy; 2025 - Raízes do Brasil. Todos os direitos reservados.</p>
 </footer>
 
 </body>
 </html>
-
-
-
-

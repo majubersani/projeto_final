@@ -1,43 +1,81 @@
-/*do icon ao footer é padrao*/
-.icon {
-    font-size: 30px;
-    color: white;
-    margin: 5px;
+/* ===================== */
+/* LOGIN PAGE */
+/* ===================== */
+.login-container {
+  min-height: calc(100vh - 130px);
+  background-color: #fafafa;
+  padding: 3rem 2rem;
+  gap: 3rem;
 }
 
-.navegar {
-    background-color: #F2B544;
+.login-card {
+  background-color: #9AA97F;
+  color: #fff;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 18px;
+  transition: 0.3s ease;
 }
 
-.footer_cor {
-    background-color: #9AA97F;
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
 }
 
-
-.imagem {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-wrap: unset;
-    overflow: clip;
-    max-height: calc(100vh - 100px);
+.titulo-login {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fff;
 }
 
-.imagem img {
-    padding-top: 80px;
+.form-label {
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
 }
 
-#div-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#div-container form{
-    margin-top: 100px;
-    background-color: #9AA97F;
-    height: 60vh;
-    width: 30%;
+.form-control {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 14px;
 }
 
-.btn{
-    background-color: black;
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4);
+  outline: none;
+}
+
+.btn-login {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #F2B544;
+  color: #000;
+}
+
+/* Imagem lateral */
+.imagem-login img {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .login-card {
+    max-width: 90%;
+  }
+
+  .imagem-login img {
+    width: 100%;
+    max-height: 300px;
+  }
 }
