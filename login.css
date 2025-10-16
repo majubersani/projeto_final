@@ -1,81 +1,83 @@
-/* ===================== */
-/* LOGIN PAGE */
-/* ===================== */
-.login-container {
-  min-height: calc(100vh - 130px);
-  background-color: #fafafa;
-  padding: 3rem 2rem;
-  gap: 3rem;
+/* ======== NAVBAR E FOOTER PADRÃO ======== */
+.navegar {
+    background-color: #F2B544;
 }
 
-.login-card {
-  background-color: #9AA97F;
-  color: #fff;
-  max-width: 380px;
-  width: 100%;
-  border-radius: 18px;
-  transition: 0.3s ease;
+.footer_cor {
+    background-color: #9AA97F;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 60px;
 }
 
-.login-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+.icon {
+    font-size: 30px;
+    color: white;
+    margin: 5px;
 }
 
-.titulo-login {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #fff;
+/* ======== CONTEÚDO PRINCIPAL ======== */
+#div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
 }
 
-.form-label {
-  font-family: 'Poppins', sans-serif;
-  color: #f5f5f5;
+/* ======== CARD DE LOGIN ======== */
+#div-container form {
+    background-color: #9AA97F;
+    color: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 380px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.form-control {
-  border-radius: 10px;
-  border: none;
-  padding: 10px 14px;
+#div-container label {
+    font-weight: 500;
 }
 
-.form-control:focus {
-  box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4);
-  outline: none;
+#div-container input {
+    border-radius: 8px;
+    border: none;
 }
 
-.btn-login {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-.btn-login:hover {
-  background-color: #F2B544;
-  color: #000;
-}
-
-/* Imagem lateral */
-.imagem-login img {
-  max-height: 450px;
-  object-fit: contain;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .login-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .login-card {
-    max-width: 90%;
-  }
-
-  .imagem-login img {
+#div-container .btn {
+    background-color: #000;
+    border: none;
     width: 100%;
-    max-height: 300px;
-  }
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#div-container .btn:hover {
+    background-color: #333;
+}
+
+/* ======== IMAGEM ======== */
+.imagem img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 900px) {
+    #div-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imagem img {
+        max-width: 220px;
+    }
+
+    #div-container form {
+        width: 90%;
+    }
 }
