@@ -1,0 +1,81 @@
+/* ===================== */
+/* LOGIN PAGE */
+/* ===================== */
+.login-container {
+  min-height: calc(100vh - 130px);
+  background-color: #fafafa;
+  padding: 3rem 2rem;
+  gap: 3rem;
+}
+
+.login-card {
+  background-color: #9AA97F;
+  color: #fff;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-login {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-label {
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 14px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(242, 181, 68, 0.4);
+  outline: none;
+}
+
+.btn-login {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #F2B544;
+  color: #000;
+}
+
+/* Imagem lateral */
+.imagem-login img {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .login-card {
+    max-width: 90%;
+  }
+
+  .imagem-login img {
+    width: 100%;
+    max-height: 300px;
+  }
+}

@@ -3,23 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Raízes do Brasil</title>
-
-  <!-- Bootstrap e ícones -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Login | Raízes do Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
-  <!-- CSS principal e CSS do login -->
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="static/login.css">
 </head>
-<body>
 
-<!-- ===================== -->
-<!-- NAVBAR -->
-<!-- ===================== -->
+<body>
+<!-- Navbar -->
 <nav class="navegar navbar d-flex flex-row justify-content-between px-3">
   <div class="d-flex flex-row align-items-center">
     <i class="icon bi bi-list"></i>
@@ -32,42 +26,47 @@
       <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
     </ul>
   </div>
-
   <div class="d-flex align-items-center">
     <i class="icon bi bi-cart"></i>
-    <a class="navbar-brand ps-3"><img src="logo.svg" width="70px" alt="Logo"></a>
+    <a class="navbar-brand ps-3"><img src="static/logo.svg" width="70px" alt="Logo"></a>
   </div>
 </nav>
 
-<!-- ===================== -->
-<!-- CONTEÚDO LOGIN -->
-<!-- ===================== -->
-<main class="conteudo-login">
-  <div class="card-login shadow-lg">
-    <h2>Login</h2>
+<!-- Conteúdo principal -->
+<main class="login-container d-flex flex-column flex-md-row align-items-center justify-content-center">
+  <div class="login-card shadow-lg p-4 rounded-4 text-center">
+    <h2 class="titulo-login mb-4">Bem-vindo(a) 🌿</h2>
     <form>
-      <div class="mb-3">
-          <label>
-              <input type="email" class="form-control" placeholder="E-mail" required>
-          </label>
+      <div class="mb-3 text-start">
+        <label for="nome" class="form-label fw-semibold">Nome</label>
+        <input id="nome" type="text" class="form-control" placeholder="Digite seu nome" required>
       </div>
-      <div class="mb-3">
-          <label>
-              <input type="password" class="form-control" placeholder="Senha" required>
-          </label>
+
+      <div class="mb-3 text-start">
+        <label for="cpf" class="form-label fw-semibold">CPF</label>
+        <input id="cpf" type="text" class="form-control" placeholder="Digite seu CPF" required>
       </div>
-      <button type="submit" class="btn btn-login w-100">Entrar</button>
+
+      <div class="mb-3 text-start">
+        <label for="senha" class="form-label fw-semibold">Senha</label>
+        <input id="senha" type="password" class="form-control" placeholder="Digite sua senha" required>
+      </div>
+
+      <div class="form-check text-start mb-3">
+        <input class="form-check-input" type="checkbox" id="termos" required>
+        <label class="form-check-label" for="termos">Concordo com os termos e condições</label>
+      </div>
+
+      <button class="btn-login w-100 py-2 fw-semibold" type="submit">Entrar</button>
     </form>
   </div>
 
-  <div class="imagem-login">
-    <img src="imgpaglogin.svg" alt="Ilustração de login" class="img-fluid">
+  <div class="imagem-login d-none d-md-block">
+    <img src="static/imgpaglogin.svg" alt="Imagem ilustrativa de login" class="img-fluid">
   </div>
 </main>
 
-<!-- ===================== -->
-<!-- RODAPÉ -->
-<!-- ===================== -->
+<!-- Rodapé -->
 <footer class="footer text-center footer_cor p-3">
   <a class="text-light mx-2" href="https://www.whatsapp.com/?lang=pt_BR"><i class="meu-icone bi bi-whatsapp"></i></a>
   <a class="text-light mx-2" href="https://www.instagram.com/"><i class="meu-icone bi bi-instagram"></i></a>
@@ -77,3 +76,4 @@
 
 </body>
 </html>
+
