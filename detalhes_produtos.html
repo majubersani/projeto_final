@@ -8,65 +8,68 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/detalhes_produtos.css">
 </head>
 <body>
 
-<!-- Modelo de Navbar --> <!-- d-flex = display flex = posição  flex-row = linha-->
-<nav class="navegar navbar d-flex flex-row">
-    <div class="d-flex flex-row">
-        <i class="icon bi bi-list"></i>
-        <ul class="navbar-nav d-flex flex-row">
-            <!--nav-item: item da lista da barra de navegação  nav-link active: transforma os itens em links-->
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
-            <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
-        </ul>
-    </div>
-    <div>
-        <i class="icon bi bi-cart"></i>
-        <a class="navbar-brand ps-3"><img src="static/logo.svg"
-                                          width="70px"></a>
-        <div class="d-flex flex-row">
-
-        </div>
-    </div>
+<!-- Navbar -->
+<nav class="navegar navbar d-flex flex-row justify-content-between px-3">
+  <div class="d-flex flex-row align-items-center">
+    <i class="icon bi bi-list"></i>
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_inicial.html">Página Inicial</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="pagina_login.html">Login</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="cadastros.html">Cadastros</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="loja.html">Loja</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="medicinais.html">Medicinais</a></li>
+      <li class="nav-item m-2"><a class="nav-link titulo text-white" href="blog.html">Blog</a></li>
+    </ul>
+  </div>
+  <div class="d-flex align-items-center">
+    <i class="icon bi bi-cart"></i>
+    <a class="navbar-brand ps-3"><img src="static/logo.svg" width="70px" alt="Logo"></a>
+  </div>
 </nav>
 
 
 
+<main>
+<!-- Conteúdo -->
+<div class="container">
+    <div class="content-container">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <img src="static/img_cadastro_produtos.svg" alt="Cocar Arco" class="img-fluid border">
+                <div class="product-title">Cocar Arco</div>
+                <div class="price">R$ 165,00</div>
+                <button class="btn btn-custom">Adicionar ao carrinho</button>
+            </div>
 
+            <div class="col-md-7">
+                <div class="section-title">Loja - Cocares</div>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Descrição</label>
+                        <textarea class="form-control" rows="4" readonly>
+Cocar Indígena feito à mão com penas coloridas, base em tecido ajustável e acabamento artesanal. Ideal para uso decorativo, apresentações culturais ou eventos temáticos. Peça única com variações de cor e formato.
+              </textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tamanho</label>
+                        <input type="text" class="form-control" value="Adulto, unissex." readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Fabricante</label>
+                        <input type="text" class="form-control" value="Pajé Inã." readonly>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
